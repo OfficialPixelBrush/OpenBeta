@@ -1,6 +1,13 @@
 {
+  "name": "openbeta",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
   "dependencies": {
-    "vitepress": "^1.6.4",
-    "vitepress-sidebar": "^1.39.0"
+    "vitepress": "^1.6.4"
   }
 }
