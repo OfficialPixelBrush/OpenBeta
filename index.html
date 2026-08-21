@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>OpenBeta</title>
+        <style>
+@font-face {
+    font-family: "Unifont";
+    src: url("./fnt/unifont.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./img/stone.png");
+    background-size: 32px auto;
+    image-rendering: crisp-edges;
+
+    color: white;
+    font-family: "Unifont", sans-serif;
+}
+
+.header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+        url("./img/dirt.png");
+    background-size: 32px auto;
+    image-rendering: crisp-edges;
+
+    margin: 0;
+    padding-left: 64px;
+    padding-right: 64px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+        margin: 0;
+    }
+    a:link {
+        color:white;
+        text-decoration:none;
+    }
+    a:visited {
+        color:white;
+    }
+    table {
+        border-spacing: 16px 0;
+    }
+}
+
+.page_body {
+    flex: 1;
+    margin-left: 64px;
+    margin-right: 64px;
+    table {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+.footer {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./img/bedrock.png");
+    background-size: 32px auto;
+    image-rendering: crisp-edges;
+
+    margin: 0;
+    padding-left: 64px;
+    padding-right: 64px;
+    color: white;
+    p, table, tr, td {
+        margin: 0;
+    }
+}
+
+a {
+    font-weight: 1000;
+    font-size: large;
+    &:link {
+        color: #7a95ff;
+    }
+    &:visited {
+        color: #b58cff;
+    };
+    &:hover, &:active {
+        color: white;
+    }
+    img {
+        height: 24px;
+        width: auto;
+        vertical-align: -0.3em;
+    }
+};
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>OpenBeta</h1>
+            <table>
+                <tr>       
+                    <td>
+                        <a href="https://github.com/OfficialPixelBrush/OpenBeta">Discord <img src="./img/discord.png"></a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/OfficialPixelBrush/OpenBeta">Source <img src="./img/github.png"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="page_body">
+        <p>
+            The OpenBeta project is an attempt to make early Minecraft
+            something the community has full control over. This is being done
+            through reverse engineering, reimplementing and documenting the ins
+            and outs of how old Minecraft worked.
+        </p>
+        <h2>Projects</h2>
+        <p>
+            Here's a list of a few projects that belong to the grander OpenBeta Project.
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://pixelbrush.dev/beta-wiki/">Technical Beta Wiki</a>
+                </td>
+                <td>
+                    <a href="https://github.com/OfficialPixelBrush/BetrockPlusPlus">Betrock++</a>
+                </td>
+                <td>
+                    <a href="https://pixelbrush.dev/LibreProg">LibreProg</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Wiki that describes the Beta 1.7.3 "specification"
+                </td>
+                <td>
+                    Beta 1.7.3-compatible Server and (eventually) Client written largely from scratch in C++
+                </td>
+                <td>
+                    Notchian/Programmer Art-like textures and assets
+                </td>
+            </tr>
+        </table>
+        <h2>Tools / Toy Projects</h2>
+        <p>
+            These are smaller mini-projects that, while still part of OpenBeta,
+            aren't necessarily part of it's grander vision,
+            or are just not as important for most people.
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://pixelbrush.dev/GoldenBase/">GoldenBase</a>
+                </td>
+                <td>
+                    <a href="https://github.com/OfficialPixelBrush/BetaPacketPlainTextifier">BPPT</a>
+                </td>
+                <td>
+                    <a href="https://github.com/OfficialPixelBrush/BetaAuth">BetaAuth</a>
+                </td>
+                <td>
+                    <a href="https://github.com/esora512/retromc">	retromc</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    A pre-release Minecraft seed explorer, written in C++ and compiled to WASM
+                </td>
+                <td>
+                    Turns Wireshark network captures into Markdown tables that make
+                    reading Beta Network activity easier
+                </td>
+                <td>
+                    Fully independent Beta Server authentication
+                </td>
+                <td>
+                    A more free-form Beta 1.7.3 Server written in
+                    <a href="https://go.dev/">Go</a> by
+                    <a href="https://github.com/esora512">esora512</a>
+                </td>
+            </tr>
+        </table>
+        <h2>
+        </div>
+        <div class="footer">
+            <p>
+                GNU Unifont 17.0.05 taken from <a href="https://www.unifoundry.com/unifont/index.html">Unifoundry.com</a>
+            </p>
+            <p>
+                NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT
+            </p>
+        </div>
+    </body>
+</html>
