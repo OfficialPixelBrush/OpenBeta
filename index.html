@@ -58,6 +58,16 @@ body {
     font-family: "Unifont", sans-serif;
 }
 
+.constrain {
+    max-width: 640pt;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
 .header {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
@@ -66,12 +76,12 @@ body {
     image-rendering: crisp-edges;
 
     margin: 0;
-    padding-left: 64px;
-    padding-right: 64px;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .constrain {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     h1 {
         margin: 0;
     }
@@ -83,15 +93,15 @@ body {
         color:white;
     }
     table {
-        border-spacing: 16px 0;
+        border-spacing: 0;
+        td:not(:last-child) {
+            padding-right: 16px;
+        }
     }
 }
 
 .page_body {
     flex: 1;
-    max-width: 640pt;
-    margin-left: 64px;
-    margin-right: 64px;
     table {
         background-color: rgba(0, 0, 0, 0.3);
         padding: 5px;
@@ -108,8 +118,6 @@ body {
     image-rendering: crisp-edges;
 
     margin: 0;
-    padding-left: 64px;
-    padding-right: 64px;
     color: white;
     p, table, tr, td {
         margin: 0;
@@ -138,6 +146,7 @@ a {
     </head>
     <body>
         <div class="header">
+            <div class="constrain">
             <h1>OpenBeta</h1>
             <table>
                 <tr>       
@@ -149,8 +158,9 @@ a {
                     </td>
                 </tr>
             </table>
+            </div>
         </div>
-        <div class="page_body">
+        <div class="page_body constrain">
         <p>
             The OpenBeta project is an attempt to make early Minecraft
             something the community has full control over. This is being done
@@ -226,12 +236,14 @@ a {
         </table>
         </div>
         <div class="footer">
+            <div class="constrain">
             <p>
                 GNU Unifont 17.0.05 taken from <a href="https://www.unifoundry.com/unifont/index.html">Unifoundry.com</a>
             </p>
             <p>
                 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT
             </p>
+            </div>
         </div>
     </body>
 </html>
