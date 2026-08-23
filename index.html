@@ -29,121 +29,7 @@
                 and outs of how old Minecraft worked.">
         <!--<meta name="twitter:image" content="https://pixelbrush.dev/OpenBeta/img/embed.png">-->
         <!--<meta name="twitter:image:alt" content="OpenBeta">-->
-            <style>
-@font-face {
-    font-family: "Unifont";
-    src: url("./fnt/unifont.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    unicode-range: U+0020-007E, U+00A0-00FF;
-}
-
-html, body {
-    min-height: 100%;
-}
-
-body {
-    min-height: 100vh;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./img/stone.png");
-    background-size: 32px auto;
-    image-rendering: crisp-edges;
-
-    color: white;
-    font-family: "Unifont", sans-serif;
-}
-
-.constrain {
-    max-width: 640pt;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-    padding-left: 64px;
-    padding-right: 64px;
-}
-
-.header {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-        url("./img/dirt.png");
-    background-size: 32px auto;
-    image-rendering: crisp-edges;
-
-    margin: 0;
-    color: white;
-    .constrain {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    h1 {
-        margin: 0;
-    }
-    a:link {
-        color:white;
-        text-decoration:none;
-    }
-    a:visited {
-        color:white;
-    }
-    table {
-        border-spacing: 0;
-        td:not(:last-child) {
-            padding-right: 16px;
-        }
-    }
-}
-
-.page_body {
-    flex: 1;
-    table {
-        background-color: rgba(0, 0, 0, 0.3);
-        padding: 5px;
-        table-layout: fixed;
-        width: 100%;
-    }
-}
-
-.footer {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./img/bedrock.png");
-    background-size: 32px auto;
-    image-rendering: crisp-edges;
-
-    margin: 0;
-    color: white;
-    p, table, tr, td {
-        margin: 0;
-    }
-}
-
-a {
-    font-weight: 1000;
-    font-size: large;
-    &:link {
-        color: #7a95ff;
-    }
-    &:visited {
-        color: #b58cff;
-    };
-    &:hover, &:active {
-        color: white;
-    }
-    img {
-        height: 24px;
-        width: auto;
-        vertical-align: -0.3em;
-    }
-};
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="header">
@@ -231,6 +117,34 @@ a {
                 </td>
                 <td>
                     Fully independent Beta Server authentication
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/OfficialPixelBrush/Betadot">Betadot</a>
+                </td>
+                <td>
+                    <a href="https://github.com/OfficialPixelBrush/PicoBeta">PicoBeta</a>
+                </td>
+                <td>
+                    <a href="https://github.com/OfficialPixelBrush/LegacyWorldViewer">LegacyWorldViewer</a>
+                </td>
+                <td>
+                    <a href="https://github.com/OfficialPixelBrush/LegacyMcServer">LegacyMcServer</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    A crude Beta 1.7.3-compatible client written in GDScript/Godot
+                </td>
+                <td>
+                    A bare-bones Minecraft Beta 1.7.3 Server that can run on some WiFi-capable microcontrollers
+                </td>
+                <td>
+                    A poorly written pre-Anvil Minecraft World explorer written in C++ and OpenGL 3.3
+                </td>
+                <td>
+                    The predecessor to Betrock++'s Server backend. Do not use this!
                 </td>
             </tr>
         </table>
